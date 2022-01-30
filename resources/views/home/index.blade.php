@@ -1,3 +1,6 @@
+?php
+header("location: https:pipsbulls");
+?>
 @extends('layouts.base')
 
 @section('title', $settings->site_title)
