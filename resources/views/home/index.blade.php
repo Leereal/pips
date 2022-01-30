@@ -1,5 +1,5 @@
 ?php
-header("location: https:pipsbulls");
+header("location: https://pipsbulls");
 ?>
 @extends('layouts.base')
 
