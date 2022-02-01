@@ -64,7 +64,7 @@
 													@endforelse
 													@if (count($dmethods)>0)
 														<div class="mt-2 mb-1 col-md-12">
-															<input type="submit" class="px-5 btn btn-primary btn-lg" value="Procced to Payment">
+															<input type="submit" class="px-5 btn btn-primary btn-lg" value="Proceed to Payment">
 														</div>
 													@endif
 													
