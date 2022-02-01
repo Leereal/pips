@@ -26,7 +26,7 @@ if (Auth::user()->dashboard_style == "light") {
                                         var announment = $("#ann").html();
                                         console.log(announment);
                                         swal({
-                                            title: "Annoucement!",
+                                            title: "Attention!",
                                             text: announment,
                                             icon: "info",
                                             buttons: {
