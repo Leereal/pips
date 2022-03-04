@@ -126,7 +126,7 @@ class AutoTaskController extends Controller
                                 $objDemo->sender = $settings->site_name;
                                 $objDemo->receiver_name = $user->name;
                                 $objDemo->date = Carbon::Now();
-                                Mail::to($user->email)->send(new NewRoi($objDemo));  
+                                //Mail::to($user->email)->send(new NewRoi($objDemo));  
                             }
                         
                         }
