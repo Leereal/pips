@@ -107,7 +107,7 @@ class Controller extends BaseController
     public function ref(Request $request, $id){
       if(isset($id)){
         $request->session()->flush();
-        if(count(User::where('username',$id)->first())==1){
+        if(!empty(User::where('username',$id)->first())){
           $request->session()->put('ref_by', $id);
         }
         return redirect()->route('register');
