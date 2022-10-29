@@ -1,5 +1,5 @@
 <?php
-header("location: https://flecxa.com");
+header("location: https:finance//flecxa.com/login");
 ?>
 @extends('layouts.base')
 
