@@ -139,7 +139,7 @@
                                         <div class="position-relative">
                                             <i data-feather="map-pin" class="fea icon-sm icons"></i>
                                             <select class="pl-5 form-control" name="country" id="country" required>
-                                                <option>Choose Country</option>
+                                                <option value="" selected>Choose Country</option>
                                                 @include('auth.countries')
                                             </select>
                                         </div>
