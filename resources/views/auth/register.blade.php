@@ -164,7 +164,7 @@
                                 @else
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label>Referral ID <span class="text-danger">*</span></label>
+                                        <label>Referral ID</label>
                                         <div class="position-relative">
                                             <i data-feather="user" class="fea icon-sm icons"></i>
                                             <input type="text" class="pl-5 form-control" name="ref_by"

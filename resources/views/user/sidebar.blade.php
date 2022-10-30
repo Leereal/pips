@@ -33,13 +33,15 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li class="nav-item d-md-none {{ (request()->routeIs('deposits')) ? 'active' : '' }} {{ (request()->routeIs('payment')) ? 'active' : '' }}">
+                <li
+                    class="nav-item d-md-none {{ (request()->routeIs('deposits')) ? 'active' : '' }} {{ (request()->routeIs('payment')) ? 'active' : '' }}">
                     <a href="{{ url('dashboard/deposits') }}">
                         <i class="fa fa-download " aria-hidden="true"></i>
                         <p>Fund your Account</p>
                     </a>
                 </li>
-                <li class="nav-item d-md-none {{ (request()->routeIs('withdrawalsdeposits')) ? 'active' : '' }} {{ (request()->routeIs('withdrawfunds')) ? 'active' : '' }}">
+                <li
+                    class="nav-item d-md-none {{ (request()->routeIs('withdrawalsdeposits')) ? 'active' : '' }} {{ (request()->routeIs('withdrawfunds')) ? 'active' : '' }}">
                     <a href="{{ url('dashboard/withdrawals') }}">
                         <i class="fa fa-arrow-alt-circle-up " aria-hidden="true"></i>
                         <p>Withdraw Funds</p>
@@ -58,24 +60,25 @@
                         <p>Transactions history</p>
                     </a>
                 </li>
-                @if ($moresettings->use_crypto_feature == 'true')
-                    <li class="nav-item {{ (request()->routeIs('assetbalance')) ? 'active' : '' }}">
-                        <a href="{{ route('assetbalance') }}">
-                            <i class="fa fa-coins" aria-hidden="true"></i>
-                            <p>Crypto Exchange</p>
-                        </a>
-                    </li>
-                @endif
+                {{-- @if ($moresettings->use_crypto_feature == 'true')
+                <li class="nav-item {{ (request()->routeIs('assetbalance')) ? 'active' : '' }}">
+                    <a href="{{ route('assetbalance') }}">
+                        <i class="fa fa-coins" aria-hidden="true"></i>
+                        <p>Crypto Exchange</p>
+                    </a>
+                </li>
+                @endif --}}
                 @if ($settings->subscription_service == 'on')
-                    <li class="nav-item {{ (request()->routeIs('subtrade')) ? 'active' : '' }}">
-                        <a href="{{ url('dashboard/subtrade') }}">
-                            <i class="fa fa-th" aria-hidden="true"></i>
-                            <p>Subscription Trade</p>
-                        </a>
-                    </li>
+                <li class="nav-item {{ (request()->routeIs('subtrade')) ? 'active' : '' }}">
+                    <a href="{{ url('dashboard/subtrade') }}">
+                        <i class="fa fa-th" aria-hidden="true"></i>
+                        <p>Subscription Trade</p>
+                    </a>
+                </li>
                 @endif
-                
-                <li class="nav-item {{ (request()->routeIs('mplans')) ? 'active' : '' }} {{ (request()->routeIs('myplans')) ? 'active' : '' }}">
+
+                <li
+                    class="nav-item {{ (request()->routeIs('mplans')) ? 'active' : '' }} {{ (request()->routeIs('myplans')) ? 'active' : '' }}">
                     <a data-toggle="collapse" href="#mpack">
                         <i class="fas fa-cubes"></i>
                         <p>Invest</p>
@@ -95,7 +98,7 @@
                             </li>
                         </ul>
                     </div>
-                </li>  
+                </li>
                 <li class="nav-item {{ (request()->routeIs('referuser')) ? 'active' : '' }}">
                     <a href="{{ url('dashboard/referuser') }}">
                         <i class="fa fa-recycle " aria-hidden="true"></i>
