@@ -12,7 +12,7 @@
     <div class="container">
         <div class="pb-3 row justify-content-center">
 
-            <div class="col-12 col-md-6 col-lg-6 col-sm-10 col-xl-6">
+            <div class="col-12 col-md-6 col-lg-6 col-sm-10 col-xl-6 justify-content-center">
                 <a href="/"><img src="{{ asset('storage/app/public/photos/'.$settings->logo)}}" alt=""
                         class="mb-3 img-fluid auth__logo"></a>
 
