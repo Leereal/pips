@@ -45,7 +45,7 @@
                                                     list below</h5>
                                             </div>
                                             @forelse ($dmethods as $method)
-                                            @if($method->name != "Bank Transfer" || $method->name != "Skrill")
+                                            @if($method->name != " Bank Transfer " || $method->name != "Skrill")
                                             <div class="mb-2 col-md-6">
                                                 <a style="cursor: pointer;" data-method="{{$method->name}}"
                                                     id="{{$method->id}}" class="text-decoration-none"
