@@ -134,7 +134,15 @@
                                 <!--end col-->
 
                                 <div class="col-md-12">
-                                    <div class="form-group ">
+                                    <div class="form-group">
+                                        <h6 class="">Type</h6>
+                                        <select name="methodtype" id="methodtype" class="form-control " required>
+                                            <option value="">Select</option>
+                                            <option value="currency">Currency</option>
+                                            <option value="crypto">Crypto</option>
+                                        </select>
+                                    </div>
+                                    {{-- <div class="form-group ">
                                         <label>Country <span class="text-danger">*</span></label>
                                         <select class="pl-5 form-control" name="country" id="country" required>
                                             <option value="" selected>Choose Country</option>
@@ -403,7 +411,7 @@
                                             <option value="Zambia">Zambia</option>
                                             <option value="Zimbabwe">Zimbabwe</option>
                                         </select>
-                                    </div>
+                                    </div> --}}
                                     @if ($errors->has('country'))
                                     <small class="text-danger">{{ $errors->first('country') }}</small>
                                     @endif
