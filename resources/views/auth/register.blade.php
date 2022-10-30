@@ -143,6 +143,7 @@
                                                 @include('auth.countries')
                                             </select>
                                         </div>
+                                        <small>If country is not selecting proceed</small>
                                         @if ($errors->has('country'))
                                         <small class="text-danger">{{ $errors->first('country') }}</small>
                                         @endif
