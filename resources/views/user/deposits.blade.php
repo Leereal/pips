@@ -45,37 +45,37 @@
                                                     list below</h5>
                                             </div>
                                             @forelse ($dmethods as $method)
-                                            @if($method->name != " Bank Transfer " || $method->name != "Skrill")
-                                            <div class="mb-2 col-md-6">
-                                                <a style="cursor: pointer;" data-method="{{$method->name}}"
-                                                    id="{{$method->id}}" class="text-decoration-none"
-                                                    onclick="checkpamethd(this.id)">
-                                                    <div class="rounded shadow bg-{{$bg}}">
-                                                        <div class="card-body">
-                                                            <span class="text-{{$text}}">
-                                                                @if (!empty($method->img_url))
-                                                                <img src="{{$method->img_url}}" alt="" class=""
-                                                                    style="width: 25px;">
-                                                                @endif
-                                                                {{$method->name}}
-                                                            </span>
+                                            @if($method->name <> "Bank Transfer")
+                                                <div class="mb-2 col-md-6">
+                                                    <a style="cursor: pointer;" data-method="{{$method->name}}"
+                                                        id="{{$method->id}}" class="text-decoration-none"
+                                                        onclick="checkpamethd(this.id)">
+                                                        <div class="rounded shadow bg-{{$bg}}">
+                                                            <div class="card-body">
+                                                                <span class="text-{{$text}}">
+                                                                    @if (!empty($method->img_url))
+                                                                    <img src="{{$method->img_url}}" alt="" class=""
+                                                                        style="width: 25px;">
+                                                                    @endif
+                                                                    {{$method->name}}
+                                                                </span>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            @endif
-                                            @empty
-                                            <div class="mb-1 col-md-12">
-                                                <p class="text-{{$text}}">No Payment Method enabled at the moment,
-                                                    please check back later.</p>
-                                            </div>
-                                            @endforelse
-                                            @if (count($dmethods)>0)
-                                            <div class="mt-2 mb-1 col-md-12">
-                                                <input type="submit" class="px-5 btn btn-primary btn-lg"
-                                                    value="Proceed to Payment">
-                                            </div>
-                                            @endif
+                                                    </a>
+                                                </div>
+                                                @endif
+                                                @empty
+                                                <div class="mb-1 col-md-12">
+                                                    <p class="text-{{$text}}">No Payment Method enabled at the moment,
+                                                        please check back later.</p>
+                                                </div>
+                                                @endforelse
+                                                @if (count($dmethods)>0)
+                                                <div class="mt-2 mb-1 col-md-12">
+                                                    <input type="submit" class="px-5 btn btn-primary btn-lg"
+                                                        value="Proceed to Payment">
+                                                </div>
+                                                @endif
 
                                         </div>
                                     </form>
